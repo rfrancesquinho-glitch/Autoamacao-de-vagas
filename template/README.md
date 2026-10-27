@@ -235,8 +235,10 @@ tcc-gov-ti-monitoramento-vagas/
 
 | Nome | RA | Função | Contato |
 |------|-----|--------|---------|
-| {{Nome do Aluno 1}} | {{RA}} | Desenvolvimento Hardware | {{email@etec.sp.gov.br}} |
-| {{Nome do Aluno 2}} | {{RA}} | Desenvolvimento Software | {{email@etec.sp.gov.br}} |
+| {{Rafael Santos Franceschini}} | {{10678}} | maquete e hardware | {{rafael.franceschini@aluno.sp.gov.br}} |
+| {{Marcos Vinicius Ermacora}} | {{10636}} | Desenvolvimento Software e hardware, auxiliar  | {{marcos.ermacora@aluno.cps.sp.gov.br}} |
+| {{Pedro Eduardo Alves Jeronimo}} | {{10641}} | Desenvolvimento Software, Hardware. | {{pedro.jeronimo@aluno.cps.sp.gov.br}} |
+| {{Vitor Souza Araújo}} | {{10633}} | Monografia, editor de texto e revisador | {{vitor.araujo15@etec.sp.gov.br}} |
 
 **Docente:** Prof. Taina Barros — {{email@etec.sp.gov.br}}
 
