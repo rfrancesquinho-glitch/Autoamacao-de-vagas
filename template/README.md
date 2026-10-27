@@ -1,11 +1,11 @@
-# 📋 {{TÍTULO_DO_PROJETO}}
+# 📋 Sistema de Monitoramento de Vagas em Tempo Real
 
-> **{{Resumo em uma frase: o que o projeto propõe, para qual organização e com qual meta mensurável.}}**
+> **Desenvolvimento de um protótipo físico e funcional de baixo custo para monitorar vagas de estacionamento em tempo real e exibir a disponibilidade aos motoristas.**
 
 [![Status](https://img.shields.io/badge/Status-Em%20andamento-yellow)]()
 [![Curso](https://img.shields.io/badge/Curso-Manutenção%20e%20Suporte-blue)]()
 [![Disciplina](https://img.shields.io/badge/Disciplina-Governança%20de%20TI-purple)]()
-[![Framework](https://img.shields.io/badge/Framework-{{FRAMEWORK}}-orange)]()
+[![Framework](https://img.shields.io/badge/Framework-IoT%20Prototyping-orange)]()
 
 ---
 
@@ -31,18 +31,18 @@
 
 | Campo | Detalhe |
 |-------|---------|
-| **Instituição** | {{Nome da instituição}} |
-| **Curso** | {{Nome do curso}} |
-| **Disciplina** | {{Nome da disciplina}} |
-| **Semestre** | {{AAAA.N}} |
-| **Orientador(a)** | {{Nome do(a) orientador(a)}} |
+| **Instituição** | ETEC Jaraguá |
+| **Curso** | Manutenção e Suporte em Informática |
+| **Disciplina** | Governança de TI |
+| **Semestre** | 2026.1 |
+| **Orientador(a)** | Prof. Taina Barros |
 | **Tipo de Trabalho** | TCC – Trabalho de Conclusão de Curso |
 
 **Resumo:**
 
-{{Parágrafo de 5-8 linhas descrevendo: (1) contexto da organização, (2) o problema identificado, (3) o que o projeto propõe, (4) como foi validado e (5) o principal resultado projetado.}}
+Este trabalho é uma pesquisa aplicada voltada para o desenvolvimento de um protótipo físico e funcional de baixo custo, projetado para monitorar vagas de estacionamento em tempo real. O problema central é a dificuldade e o tempo gasto para localizar vagas disponíveis em ambientes lotados. A solução propõe o uso de um microcontrolador acessível (como ESP32 ou Arduino) conectado a sensores de presença ultrassônicos, integrados a um banco de dados gratuito na nuvem. A validação é feita através de testes manuais na bancada da escola usando carrinhos de brinquedo, visando entregar um sistema de resposta rápida que atualiza um aplicativo mostrando o status da vaga.
 
-**Palavras-chave:** `{{palavra 1}}`, `{{palavra 2}}`, `{{palavra 3}}`, `{{palavra 4}}`, `{{palavra 5}}`
+**Palavras-chave:** `IoT`, `Microcontroladores`, `ESP32`, `Sensores Ultrassônicos`, `Automação`
 
 ---
 
@@ -50,23 +50,19 @@
 
 ### Problema
 
-> {{Descreva o problema em 2-4 frases. Inclua: qual processo está com falhas, como está sendo feito hoje (AS-IS), o principal sintoma medido (ex: tempo, taxa de erro, volume).}}
+> A falta de visibilidade sobre a ocupação de vagas de estacionamento gera perda de tempo para os motoristas, aumento no consumo de combustível e estresse. Atualmente, a identificação de vagas livres é feita de forma manual e visual pelo condutor, resultando em tráfego desnecessário e sistemas comerciais possuem um alto custo de implementação.
 
 ### Justificativa
 
 - 📊 **Dados do cenário atual:**
-  - {{Métrica 1 — ex: X incidentes/mês}}
-  - {{Métrica 2 — ex: Tempo médio de resolução: X dias}}
-  - {{Métrica 3 — ex: Taxa de reincidência: X%}}
-  - {{Métrica 4 — ex: X aulas/atendimentos impactados por mês}}
+  - Tempo médio para encontrar vaga: 15 minutos em horários de pico.
+  - Custo de implantação de sistemas comerciais: Aproximadamente R$ 3.000,00 por vaga.
 - 💰 **Impacto no negócio:**
-  - {{Impacto financeiro ou operacional estimado}}
-  - {{Outro impacto mensurável}}
-  - {{Satisfação dos usuários — ex: NPS atual: X}}
+  - Otimização do tempo do motorista e melhoria no fluxo interno do estacionamento.
+  - Redução drástica de custos através do uso de componentes de prototipagem acessíveis, permitindo que pequenos estacionamentos adotem a tecnologia.
 - 📖 **Relevância acadêmica:**
-  - {{Conexão com o conteúdo da disciplina}}
-  - {{Viabilidade de coleta de dados}}
-  - {{Contribuição para a organização estudada}}
+  - Aplicação prática de conceitos de programação (Back-end e Front-end) e eletrônica.
+  - Integração de hardware físico (sensores na protoboard) com banco de dados em nuvem via Wi-Fi.
 
 ---
 
@@ -74,15 +70,14 @@
 
 ### Objetivo Geral
 
-{{1 frase com verbo no infinitivo + meta mensurável. Ex: "Propor e validar um modelo de X baseado em Y para Z, visando reduzir/aumentar W em pelo menos N%."}}
+Desenvolver um protótipo físico e funcional de baixo custo para monitorar vagas de estacionamento em tempo real, informando a disponibilidade ao motorista via interface visual.
 
 ### Objetivos Específicos
 
-1. [ ] {{Objetivo específico 1 — Diagnosticar / Levantar / Coletar}}
-2. [ ] {{Objetivo específico 2 — Mapear / Analisar}}
-3. [ ] {{Objetivo específico 3 — Projetar / Propor}}
-4. [ ] {{Objetivo específico 4 — Criar / Elaborar}}
-5. [ ] {{Objetivo específico 5 — Validar / Simular / Medir}}
+1. [x] Planejar e Definir Componentes: Selecionar microcontroladores (ESP32/Arduino), sensores ultrassônicos baratos, banco de dados gratuito na nuvem e ferramentas visuais para o app.
+2. [x] Montar e Programar o Back-end: Montar o circuito físico na placa de testes (protoboard), programar a leitura de presença e o envio de dados via Wi-Fi.
+3. [ ] Criar o Aplicativo/Site (Front-end): Desenvolver uma interface direta (via Thunkable, App Inventor ou HTML/CSS) conectada ao banco de dados para alterar as cores do mapa (verde para livre, vermelho para ocupada).
+4. [ ] Realizar Testes Práticos: Avaliar na bancada da escola, usando maquetes, a precisão da detecção de distância e a velocidade com que a cor muda na tela.
 
 ---
 
@@ -92,23 +87,23 @@
 
 | Framework | Versão | Processos/Domínios Utilizados |
 |-----------|--------|-------------------------------|
-| **{{Framework principal}}** | **{{Versão}}** | **{{Processos/práticas aplicados}}** |
-| {{Framework complementar}} | {{Versão}} | {{Domínio/processo — referência complementar}} |
+| **Prototipagem Ágil de IoT** | **1.0** | **Concepção, Montagem em Bancada, Integração Cloud e Validação** |
 
 ### Práticas / Processos Aplicados
 
 | Prática / Processo | Aplicação no Projeto |
 |--------------------|---------------------|
-| {{Prática 1}} | {{Como foi aplicada}} |
-| {{Prática 2}} | {{Como foi aplicada}} |
-| {{Prática 3}} | {{Como foi aplicada}} |
+| ESP32 ou Arduino | Microcontrolador central para processamento dos sensores e comunicação Wi-Fi com a internet (Back-end). |
+| Sensor Ultrassônico | Leitura de presença física para identificar se há um carrinho na vaga. |
+| Thunkable / App Inventor | Ferramentas visuais gratuitas para a criação da interface do aplicativo (Front-end) do motorista. |
+| Banco de Dados Cloud | Estrutura de banco de dados gratuito na nuvem para armazenar a informação de "vaga livre" ou "vaga ocupada" e integrá-la ao mapa. |
 
 ### Metodologia de Pesquisa
 
-- **Tipo:** {{Estudo de caso / Pesquisa-ação / Pesquisa descritiva}}
-- **Abordagem:** {{Qualitativa / Quantitativa / Mista}}
-- **Coleta de dados:** {{Métodos utilizados — ex: observação, questionários, entrevistas, análise documental}}
-- **Ferramentas:** {{Ferramentas utilizadas no projeto}}
+- **Tipo:** Pesquisa aplicada.
+- **Abordagem:** Qualitativa e Quantitativa (testes de funcionalidade e medição de tempo de resposta).
+- **Coleta de dados:** Testes práticos manuais feitos na bancada da escola usando carrinhos de brinquedo e maquetes.
+- **Ferramentas:** Protoboard, IDE do Arduino, sensores ultrassônicos, banco de dados em nuvem.
 
 ---
 
@@ -116,24 +111,20 @@
 
 ### ✅ Dentro do Escopo
 
-- {{Item 1}}
-- {{Item 2}}
-- {{Item 3}}
-- {{Item 4}}
-- {{Item 5}}
+- Montagem do hardware na placa de testes (protoboard) com sensores ultrassônicos.
+- Programação do microcontrolador para envio de dados de status para a internet via Wi-Fi.
+- Criação de uma interface de usuário simples com mudança automática de cores (Verde/Vermelho).
+- Testes práticos avaliando erro de distância na detecção e a velocidade de mudança de cor no celular.
 
 ### ❌ Fora do Escopo
 
-- {{O que NÃO foi abordado e por quê}}
-- {{Item 2}}
-- {{Item 3}}
+- Implementação física em um estacionamento real (projeto restrito à bancada e maquetes).
+- Desenvolvimento de sistema de pagamentos automáticos ou reserva antecipada de vagas.
 
 ### ⚠️ Premissas e Restrições
 
-- **Premissa 1:** {{Ex: A organização autorizou acesso aos dados}}
-- **Premissa 2:** {{Outra premissa}}
-- **Restrição 1:** {{Ex: Orçamento zero — todas as ferramentas devem ser gratuitas}}
-- **Restrição 2:** {{Ex: Nomes anonimizados conforme LGPD}}
+- **Premissa 1:** A escola disponibiliza a bancada e infraestrutura básica de rede para conectar o microcontrolador via Wi-Fi.
+- **Restrição 1:** O projeto deve priorizar a economia estrita, utilizando apenas componentes acessíveis e ferramentas de software gratuitas.
 
 ---
 
@@ -141,18 +132,11 @@
 
 | # | Entregável | Formato | Localização | Status |
 |---|-----------|---------|-------------|--------|
-| 1 | Diagnóstico do cenário atual | MD | `docs/01-diagnostico-cenario-atual.md` | ⬜ Pendente |
-| 2 | Questionário aplicado + respostas | MD | `dados/02-questionario-aplicado.md` | ⬜ Pendente |
-| 3 | Mapeamento AS-IS (BPMN) | MD (Mermaid) | `diagramas/03-processo-as-is.md` | ⬜ Pendente |
-| 4 | Mapeamento TO-BE (BPMN) | MD (Mermaid) | `diagramas/04-processo-to-be.md` | ⬜ Pendente |
-| 5 | Catálogo de incidentes recorrentes | XLSX | `dados/05-catalogo-incidentes.xlsx` | ⬜ Pendente |
-| 6 | Base de conhecimento | MD | `docs/06-base-conhecimento.md` | ⬜ Pendente |
-| 7 | Matriz de prioridade + SLAs | XLSX | `dados/07-matriz-prioridade-sla.xlsx` | ⬜ Pendente |
-| 8 | Matriz RACI | XLSX | `diagramas/08-matriz-raci.xlsx` | ⬜ Pendente |
-| 9 | Relatório de simulação/validação | MD | `docs/09-relatorio-simulacao.md` | ⬜ Pendente |
-| 10 | Plano de implementação | MD | `docs/10-plano-implementacao.md` | ⬜ Pendente |
-| 11 | Estrutura da monografia | MD | `docs/11-estrutura-monografia.md` | ⬜ Pendente |
-| 12 | Roteiro dos slides da defesa | MD | `apresentacao/12-roteiro-slides-defesa.md` | ⬜ Pendente |
+| 1 | Documento de Arquitetura e Planejamento | MD | `docs/01-documento-arquitetura.md` | ✅ Concluído |
+| 2 | Circuito eletrônico montado em protoboard | Físico | `Físico (Bancada)` | 🔄 Em Andamento |
+| 3 | Código-fonte do Microcontrolador (Back-end) | .ino / C++ | `src/backend/` | 🔄 Em Andamento |
+| 4 | Aplicativo Front-end integrado ao banco de dados | App/APK | `src/frontend/` | ⬜ Pendente |
+| 5 | Relatório de Testes Práticos e Validação | MD | `docs/05-relatorio-testes.md` | ⬜ Pendente |
 
 ---
 
@@ -160,46 +144,33 @@
 
 | Fase | Atividade | Início | Fim | Status |
 |------|-----------|--------|-----|--------|
-| 1 | Definição do tema e escopo | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 2 | Revisão bibliográfica | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 3 | Coleta de dados | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 4 | Diagnóstico + Mapeamento AS-IS | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 5 | Proposta TO-BE + Framework | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 6 | Catálogo + Base de conhecimento | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 7 | Simulação e métricas projetadas | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 8 | Redação da monografia | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 9 | Revisão com orientador(a) | {{DD/MM}} | {{DD/MM}} | ⬜ |
-| 10 | Defesa / Apresentação final | {{DD/MM}} | {{DD/MM}} | ⬜ |
+| 1 | Planejamento e Escolha dos Componentes | 01/08/2026 | 15/08/2026 | ✅ Concluído |
+| 2 | Montagem do Circuito e Programação (Back-end) | 16/08/2026 | 30/09/2026 | 🔄 Em Andamento |
+| 3 | Criação do Aplicativo/Site (Front-end) | 01/10/2026 | 31/10/2026 | ⬜ Pendente |
+| 4 | Testes Práticos na Bancada da Escola | 01/11/2026 | 15/11/2026 | ⬜ Pendente |
+| 5 | Análise de Resultados e Documentação Final | 16/11/2026 | 30/11/2026 | ⬜ Pendente |
 
 ---
 
 ## 📁 Estrutura do Repositório
 
-```
-tcc-gov-ti-{{nome-do-projeto}}/
+
+---
+tcc-gov-ti-monitoramento-vagas/
 │
-├── README.md                           # ← Você está aqui
+├── README.md                       # ← Você está aqui
 │
 ├── docs/
-│   ├── 01-diagnostico-cenario-atual.md # Diagnóstico do cenário atual
-│   ├── 06-base-conhecimento.md         # Soluções documentadas
-│   ├── 09-relatorio-simulacao.md       # Resultados da validação
-│   ├── 10-plano-implementacao.md       # Plano com fases e responsáveis
-│   └── 11-estrutura-monografia.md      # Roteiro da monografia
+│   ├── 01-documento-arquitetura.md # Arquitetura e planejamento
+│   └── 05-relatorio-testes.md      # Resultados da validação
 │
-├── diagramas/
-│   ├── 03-processo-as-is.md            # Processo atual (Mermaid/BPMN)
-│   ├── 04-processo-to-be.md            # Processo proposto (Mermaid/BPMN)
-│   └── 08-matriz-raci.xlsx             # Matriz RACI
+├── src/
+│   ├── backend/                    # Código-fonte do ESP32/Arduino (.ino)
+│   └── frontend/                   # Código/projeto do aplicativo
 │
-├── dados/
-│   ├── 02-questionario-aplicado.md     # Questionário + respostas
-│   ├── 05-catalogo-incidentes.xlsx     # Catálogo categorizado
-│   └── 07-matriz-prioridade-sla.xlsx   # Prioridades + metas SLA
-│
-└── apresentacao/
-    └── 12-roteiro-slides-defesa.md     # Roteiro dos slides
-```
+└── maquete/
+└── esquema-e-fotos.md          # Fotos e detalhes da bancada de testes
+
 
 ---
 
@@ -208,44 +179,26 @@ tcc-gov-ti-{{nome-do-projeto}}/
 | Eu quero... | Vá para... |
 |-------------|-----------|
 | Entender o projeto em 2 min | Leia o [Resumo](#-sobre-o-projeto) e os [Objetivos](#-objetivos) |
-| Ver o problema com dados | Seção [Problema e Justificativa](#-problema-e-justificativa) |
-| Visualizar os processos | `diagramas/03-processo-as-is.md` e `diagramas/04-processo-to-be.md` |
-| Consultar a base de conhecimento | `docs/06-base-conhecimento.md` |
-| Analisar os números | `docs/09-relatorio-simulacao.md` |
-| Ler o roteiro da monografia | `docs/11-estrutura-monografia.md` |
-| Ver o roteiro da apresentação | `apresentacao/12-roteiro-slides-defesa.md` |
+| Ver o problema e os dados | Seção [Problema e Justificativa](#-problema-e-justificativa) |
+| Consultar o código Back-end | `src/backend/` |
+| Ver a interface Front-end | `src/frontend/` |
+| Analisar os testes práticos | `docs/05-relatorio-testes.md` |
 
 ---
 
 ## 📊 Resultados e Conclusões
 
-<!--
-  Preencha esta seção ao final do projeto, após a validação/simulação.
-  Use os dados do artefato 09-relatorio-simulacao.md.
--->
+### Principais Resultados Esperados
 
-### Principais Resultados
-
-| Métrica | AS-IS (atual) | TO-BE (projetado) | Variação |
-|---------|---------------|-------------------|----------|
-| {{Métrica principal — ex: MTTR}} | {{Valor}} | {{Valor}} | **{{%}}** |
-| {{Métrica 2}} | {{Valor}} | {{Valor}} | **{{%}}** |
-| {{Métrica 3}} | {{Valor}} | {{Valor}} | **{{%}}** |
-| {{Métrica 4}} | {{Valor}} | {{Valor}} | **{{%}}** |
-| {{Métrica 5 — ex: Satisfação NPS}} | {{Valor}} | {{Valor estimado}} | **{{%}}** |
+| Métrica | Meta Projetada |
+|---------|----------------|
+| Precisão do Sensor Ultrassônico | 100% de acerto na detecção do carrinho de brinquedo na distância estipulada na maquete. |
+| Velocidade de Resposta na Tela | Mudança da cor no celular em menos de 2 segundos após a colocação do objeto na vaga. |
+| Custo Total de Componentes | Inferior a R$ 100,00 por vaga monitorada. |
 
 ### Conclusões
 
-1. {{Conclusão principal — o que o projeto provou ou demonstrou}}
-2. {{Conclusão 2 — aprendizado metodológico ou técnico}}
-3. {{Conclusão 3 — relevância prática para a organização}}
-4. {{Conclusão 4 — contribuição acadêmica}}
-
-### Trabalhos Futuros
-
-- {{Sugestão de continuidade 1}}
-- {{Sugestão de continuidade 2}}
-- {{Sugestão de continuidade 3}}
+*(Seção a ser consolidada após a Etapa 4 dos Testes Práticos na Bancada da Escola)*
 
 ---
 
@@ -253,14 +206,8 @@ tcc-gov-ti-{{nome-do-projeto}}/
 
 > Formato ABNT (NBR 6023:2018) — ordem alfabética.
 
-1. {{SOBRENOME, Nome. **Título da obra**. Local: Editora, Ano.}}
-2. {{SOBRENOME, Nome. **Título da obra**. Local: Editora, Ano.}}
-3. {{SOBRENOME, Nome. **Título da obra**. Local: Editora, Ano.}}
-
-<!--
-  Adicione pelo menos 8 referências.
-  Inclua obrigatoriamente: guia oficial do framework, pelo menos 1 metodologia de pesquisa, e obras de autores brasileiros.
--->
+1. MONK, Simon. **Programação com Arduino: com orçamentos fáceis e baratos**. Porto Alegre: Bookman, 2017.
+2. SPERINSKI, Cezar. **Internet das Coisas com ESP32 e Arduino**. São Paulo: Editora Erica, 2020.
 
 ---
 
@@ -273,16 +220,12 @@ tcc-gov-ti-{{nome-do-projeto}}/
 
 | Termo | Definição (no contexto deste projeto) |
 |-------|---------------------------------------|
-| **AS-IS** | {{Estado atual do processo — descreva brevemente como é feito hoje.}} |
-| **TO-BE** | {{Estado futuro proposto — descreva brevemente o que o projeto propõe.}} |
-| **{{Termo técnico 1}}** | {{Definição adaptada ao contexto do projeto}} |
-| **{{Termo técnico 2}}** | {{Definição}} |
-| **{{Termo técnico 3}}** | {{Definição}} |
-| **{{Sigla — ex: MTTR}}** | {{Significado e como é usado no projeto}} |
-| **{{Sigla — ex: SLA}}** | {{Significado e como é usado no projeto}} |
-| **{{Sigla — ex: RACI}}** | {{Significado e como é usado no projeto}} |
-| **{{Sigla — ex: BPMN}}** | {{Significado e como é usado no projeto}} |
-| **{{Sigla — ex: NPS}}** | {{Significado e como é usado no projeto}} |
+| **IoT** | Internet das Coisas – conexão de objetos físicos à internet. |
+| **ESP32** | Microcontrolador de baixo custo com Wi-Fi e Bluetooth integrados. |
+| **Sensor Ultrassônico** | Dispositivo que mede distâncias através de ondas sonoras (HC-SR04). |
+| **Protoboard** | Placa de ensaio usada para montagem de circuitos eletrônicos sem solda. |
+| **Back-end** | Lógica de programação executada no microcontrolador e na nuvem. |
+| **Front-end** | Interface visual do aplicativo acessada pelo motorista. |
 
 </details>
 
@@ -292,20 +235,18 @@ tcc-gov-ti-{{nome-do-projeto}}/
 
 | Nome | RA | Função | Contato |
 |------|-----|--------|---------|
-| {{Nome completo}} | {{RA}} | {{Função — ex: Líder de projeto / Redação}} | {{email@etec.sp.gov.br}} |
-| {{Nome completo}} | {{RA}} | {{Função}} | {{email}} |
-| {{Nome completo}} | {{RA}} | {{Função}} | {{email}} |
-| {{Nome completo}} | {{RA}} | {{Função}} | {{email}} |
+| {{Nome do Aluno 1}} | {{RA}} | Desenvolvimento Hardware | {{email@etec.sp.gov.br}} |
+| {{Nome do Aluno 2}} | {{RA}} | Desenvolvimento Software | {{email@etec.sp.gov.br}} |
 
-**Docente:** {{Nome do(a) orientador(a)}} — {{email@etec.sp.gov.br}}
+**Docente:** Prof. Taina Barros — {{email@etec.sp.gov.br}}
 
 ---
 
 ## 📄 Licença
 
-Este trabalho é de natureza acadêmica e foi desenvolvido como requisito parcial para conclusão do curso de **{{Nome do Curso}}** na disciplina de **{{Nome da Disciplina}}**.
+Este trabalho é de natureza acadêmica e foi desenvolvido como requisito parcial para conclusão do curso de **Manutenção e Suporte em Informática** na disciplina de **Governança de TI** na **ETEC Jaraguá**.
 
-© {{AAAA}} {{Nome da Instituição}} — Todos os direitos reservados.
+© 2026 ETEC Jaraguá — Todos os direitos reservados.
 
 ---
 
@@ -313,31 +254,16 @@ Este trabalho é de natureza acadêmica e foi desenvolvido como requisito parcia
 <summary>📝 <strong>Checklist de Entrega (uso interno da equipe)</strong></summary>
 
 ### Documentação
-- [ ] README.md preenchido e atualizado
-- [ ] Monografia revisada e formatada (ABNT)
-- [ ] Referências bibliográficas completas e verificadas
+- [x] Documento de Arquitetura e Planejamento
+- [ ] Relatório de Testes Práticos e Validação
 
 ### Artefatos Técnicos
-- [ ] Diagrama AS-IS do processo analisado
-- [ ] Diagrama TO-BE com o processo proposto
-- [ ] Catálogo de incidentes/ocorrências recorrentes
-- [ ] Base de conhecimento com soluções documentadas
-- [ ] Matriz RACI preenchida
-- [ ] Matriz de prioridade com metas de SLA/atendimento
-- [ ] Plano de implementação com cronograma
-
-### Dados e Evidências
-- [ ] Dados coletados organizados e anonimizados
-- [ ] Métricas de baseline documentadas
-- [ ] Resultados da simulação/validação tabulados
-- [ ] Questionários aplicados e respostas consolidadas
+- [ ] Circuito eletrônico montado em protoboard
+- [ ] Código-fonte do Microcontrolador (Back-end)
+- [ ] Aplicativo Front-end integrado ao banco de dados
 
 ### Apresentação
-- [ ] Slides da defesa ({{15-20 slides}})
-- [ ] Ensaio realizado ({{10-15 min}})
-
-### Repositório
-- [ ] Todos os arquivos organizados conforme estrutura
-- [ ] Sem arquivos desnecessários
+- [ ] Roteiro dos slides da defesa
+- [ ] Ensaio da apresentação realizado
 
 </details>
